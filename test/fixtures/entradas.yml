@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2016-07-01
+  remision: 1
+  articulo: MyString
+  cantidad: MyString
+  recibe: MyString
+  proveedor: MyString
+  autoriza: MyString
+  solicita: MyString
+
+two:
+  fecha: 2016-07-01
+  remision: 1
+  articulo: MyString
+  cantidad: MyString
+  recibe: MyString
+  proveedor: MyString
+  autoriza: MyString
+  solicita: MyString

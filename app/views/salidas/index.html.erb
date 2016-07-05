@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Salidas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Numero</th>
+      <th>Articulo</th>
+      <th>Piezas</th>
+      <th>Solicita</th>
+      <th>Autoriza</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @salidas.each do |salida| %>
+      <tr>
+        <td><%= salida.fecha %></td>
+        <td><%= salida.numero %></td>
+        <td><%= salida.articulo %></td>
+        <td><%= salida.piezas %></td>
+        <td><%= salida.solicita %></td>
+        <td><%= salida.autoriza %></td>
+        <td><%= link_to 'Show', salida %></td>
+        <td><%= link_to 'Edit', edit_salida_path(salida) %></td>
+        <td><%= link_to 'Destroy', salida, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Salida', new_salida_path %>

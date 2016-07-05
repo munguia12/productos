@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @salida.fecha %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @salida.numero %>
+</p>
+
+<p>
+  <strong>Articulo:</strong>
+  <%= @salida.articulo %>
+</p>
+
+<p>
+  <strong>Piezas:</strong>
+  <%= @salida.piezas %>
+</p>
+
+<p>
+  <strong>Solicita:</strong>
+  <%= @salida.solicita %>
+</p>
+
+<p>
+  <strong>Autoriza:</strong>
+  <%= @salida.autoriza %>
+</p>
+
+<%= link_to 'Edit', edit_salida_path(@salida) %> |
+<%= link_to 'Back', salidas_path %>

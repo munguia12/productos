@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Provedor:</strong>
+  <%= @proveedor.provedor %>
+</p>
+
+<p>
+  <strong>Contacto:</strong>
+  <%= @proveedor.contacto %>
+</p>
+
+<%= link_to 'Edit', edit_proveedor_path(@proveedor) %> |
+<%= link_to 'Back', proveedors_path %>

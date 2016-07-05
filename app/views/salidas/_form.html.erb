@@ -1,0 +1,47 @@
+<%= form_for(salida) do |f| %>
+  <% if salida.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(salida.errors.count, "error") %> prohibited this salida from being saved:</h2>
+
+      <ul>
+      <% salida.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fecha %>
+    <%= f.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numero %>
+    <%= f.number_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= f.label :articulo %>
+    <%= collection_select(:salidas, :articulo, Producto.all, :departur, :articulo)%>
+  </div>
+
+  <div class="field">
+    <%= f.label :piezas %>
+    <%= f.number_field :piezas %>
+  </div>
+
+  <div class="field">
+    <%= f.label :solicita %>
+    <%= f.text_field :solicita %>
+  </div>
+
+  <div class="field">
+    <%= f.label :autoriza %>
+    <%= f.text_field :autoriza %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

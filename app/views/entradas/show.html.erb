@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @entrada.fecha %>
+</p>
+
+<p>
+  <strong>Remision:</strong>
+  <%= @entrada.remision %>
+</p>
+
+<p>
+  <strong>Articulo:</strong>
+  <%= @entrada.articulo %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @entrada.cantidad %>
+</p>
+
+<p>
+  <strong>Recibe:</strong>
+  <%= @entrada.recibe %>
+</p>
+
+<p>
+  <strong>Proveedor:</strong>
+  <%= @entrada.proveedor %>
+</p>
+
+<p>
+  <strong>Autoriza:</strong>
+  <%= @entrada.autoriza %>
+</p>
+
+<p>
+  <strong>Solicita:</strong>
+  <%= @entrada.solicita %>
+</p>
+
+<%= link_to 'Edit', edit_entrada_path(@entrada) %> |
+<%= link_to 'Back', entradas_path %>
