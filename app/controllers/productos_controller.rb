@@ -49,6 +49,7 @@ class ProductosController < ApplicationController
         format.json { render json: @producto.errors, status: :unprocessable_entity }
       end
     end
+    
   end
 
   # DELETE /productos/1
