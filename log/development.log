@@ -6136,3 +6136,1037 @@ Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+Started GET "/salidas" for ::1 at 2016-07-25 15:34:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 461ms (Views: 430.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/salidas/new" for ::1 at 2016-07-25 15:34:43 -0500
+Processing by SalidasController#new as HTML
+  Rendering salidas/new.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered salidas/_form.html.erb (51.0ms)
+  Rendered salidas/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 183ms (Views: 173.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:34:45 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 128ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:34:48 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 122ms (Views: 115.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:34:49 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 172ms (Views: 163.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos/new" for ::1 at 2016-07-25 15:34:52 -0500
+Processing by ProductosController#new as HTML
+  Rendering productos/new.html.erb within layouts/application
+  Rendered productos/_form.html.erb (3.0ms)
+  Rendered productos/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 103ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:34:55 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 94ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:34:59 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 96ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:34:59 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 100ms (Views: 92.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/salidas/new" for ::1 at 2016-07-25 15:35:03 -0500
+Processing by SalidasController#new as HTML
+  Rendering salidas/new.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered salidas/_form.html.erb (6.0ms)
+  Rendered salidas/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 105ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salidas" for ::1 at 2016-07-25 15:35:13 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nyb4I3RtZBMv8O8D4pyGTh0blekJdz0MvBhQO9iVdzGT1yK9VCvRGD3YTszEPVmaKw5Rv3Nnks4QbVe+ZJ0fRg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"25", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"15", "solicita"=>"15", "autoriza"=>"15"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Salida:0x92d36c0>):
+  
+app/models/salida.rb:10:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (970.1ms)
+Started POST "/salidas" for ::1 at 2016-07-25 15:35:40 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nyb4I3RtZBMv8O8D4pyGTh0blekJdz0MvBhQO9iVdzGT1yK9VCvRGD3YTszEPVmaKw5Rv3Nnks4QbVe+ZJ0fRg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"25", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"15", "solicita"=>"15", "autoriza"=>"15"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `-' for nil:NilClass):
+  
+app/models/salida.rb:10:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (980.1ms)
+Started POST "/salidas" for ::1 at 2016-07-25 15:35:56 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nyb4I3RtZBMv8O8D4pyGTh0blekJdz0MvBhQO9iVdzGT1yK9VCvRGD3YTszEPVmaKw5Rv3Nnks4QbVe+ZJ0fRg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"25", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"15", "solicita"=>"15", "autoriza"=>"15"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Salida:0x9d3b1f8>):
+  
+app/models/salida.rb:9:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1134.1ms)
+Started POST "/salidas" for ::1 at 2016-07-25 15:36:25 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nyb4I3RtZBMv8O8D4pyGTh0blekJdz0MvBhQO9iVdzGT1yK9VCvRGD3YTszEPVmaKw5Rv3Nnks4QbVe+ZJ0fRg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"25", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"15", "solicita"=>"15", "autoriza"=>"15"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Salida:0x9fb9868>):
+  
+app/models/salida.rb:10:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1061.1ms)
+Started POST "/salidas" for ::1 at 2016-07-25 15:36:59 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nyb4I3RtZBMv8O8D4pyGTh0blekJdz0MvBhQO9iVdzGT1yK9VCvRGD3YTszEPVmaKw5Rv3Nnks4QbVe+ZJ0fRg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"25", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"15", "solicita"=>"15", "autoriza"=>"15"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `-' for nil:NilClass):
+  
+app/models/salida.rb:10:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1442.1ms)
+Started POST "/salidas" for ::1 at 2016-07-25 15:37:32 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nyb4I3RtZBMv8O8D4pyGTh0blekJdz0MvBhQO9iVdzGT1yK9VCvRGD3YTszEPVmaKw5Rv3Nnks4QbVe+ZJ0fRg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"25", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"15", "solicita"=>"15", "autoriza"=>"15"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "salidas" ("fecha", "numero", "articulo", "piezas", "solicita", "autoriza", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fecha", Mon, 25 Jul 2016], ["numero", 1], ["articulo", "pernos"], ["piezas", 15], ["solicita", "15"], ["autoriza", "15"], ["created_at", 2016-07-25 20:37:32 UTC], ["updated_at", 2016-07-25 20:37:32 UTC]]
+  [1m[35m (74.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/salidas/14
+Completed 302 Found in 111ms (ActiveRecord: 74.0ms)
+
+
+Started GET "/salidas/14" for ::1 at 2016-07-25 15:37:32 -0500
+Processing by SalidasController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT  "salidas".* FROM "salidas" WHERE "salidas"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering salidas/show.html.erb within layouts/application
+  Rendered salidas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 104ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/entradas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/productos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/proveedors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/milligram.self-679541c81a17c5fca3159783583b4fb2103e9622eadfb3b40d1177f50952189b.css?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/entradas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/productos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/proveedors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/salidas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/assets/salidas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:37:33 -0500
+Started GET "/salidas" for ::1 at 2016-07-25 15:37:35 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 99ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:37:40 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 107ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:37:40 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 147ms (Views: 139.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:37:48 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 107ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:37:49 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 106ms (Views: 99.1ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/salidas/14" for ::1 at 2016-07-25 15:37:53 -0500
+Processing by SalidasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9Htm7d9MC8QjAgHdQ3tNYbqvJeh8SdMJ6Q+MFJTK2yVOONkDckNQr0kiwFqtY517DN4VExrpxT770xMyFQs2Vw==", "id"=>"14"}
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT  "salidas".* FROM "salidas" WHERE "salidas"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "salidas" WHERE "salidas"."id" = ?[0m  [["id", 14]]
+  [1m[35m (86.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/salidas
+Completed 302 Found in 93ms (ActiveRecord: 87.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:37:53 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 120ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:38:11 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 113ms (Views: 101.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/milligram.self-679541c81a17c5fca3159783583b4fb2103e9622eadfb3b40d1177f50952189b.css?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/productos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/proveedors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/entradas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/entradas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/productos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/proveedors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/salidas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/assets/salidas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:38:12 -0500
+Started GET "/productos" for ::1 at 2016-07-25 15:38:15 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 111ms (Views: 101.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:38:16 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 146ms (Views: 137.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/productos/3/edit" for ::1 at 2016-07-25 15:38:25 -0500
+Processing by ProductosController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering productos/edit.html.erb within layouts/application
+  Rendered productos/_form.html.erb (3.0ms)
+  Rendered productos/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 119ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/productos/3" for ::1 at 2016-07-25 15:38:29 -0500
+Processing by ProductosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0I/K8MTStUa/AmqNuZQiA4GkL27Z34VWEADrsgzVpi8YODXpieRm0X2zKdZoP5p8P48POu7k6rMkjiOeDUeUvQ==", "producto"=>{"articulo"=>"pernos", "existencia"=>"20", "stockmin"=>"10", "stockmax"=>"60", "disponibles"=>"si"}, "commit"=>"Update Producto", "id"=>"3"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "productos" SET "stockmin" = ?, "updated_at" = ? WHERE "productos"."id" = ?[0m  [["stockmin", 10], ["updated_at", 2016-07-25 20:38:29 UTC], ["id", 3]]
+  [1m[35m (90.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/productos/3
+Completed 302 Found in 103ms (ActiveRecord: 91.0ms)
+
+
+Started GET "/productos/3" for ::1 at 2016-07-25 15:38:29 -0500
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering productos/show.html.erb within layouts/application
+  Rendered productos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 102ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:38:31 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 121ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:38:37 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 119ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:38:37 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 102ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/salidas/12" for ::1 at 2016-07-25 15:38:41 -0500
+Processing by SalidasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sBXmiVjBku73iUDruiBrIAR0XvGiGLFQPEH5SlYhk/oKVlln9c7JhZ2pgWxUOLs6sgVuCsS4p2cunWZs1+B+iA==", "id"=>"12"}
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT  "salidas".* FROM "salidas" WHERE "salidas"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "salidas" WHERE "salidas"."id" = ?[0m  [["id", 12]]
+  [1m[35m (86.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/salidas
+Completed 302 Found in 100ms (ActiveRecord: 87.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:38:41 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 107ms (Views: 98.3ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/salidas/13" for ::1 at 2016-07-25 15:38:43 -0500
+Processing by SalidasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q5mHVcaRjsgjzu79eHJzAIiQTqCFlVujXWTjXhw3jR752ji7a57Vo0nuL3qWaqMaPuF+W+M1TZRPuHx4nfZgbA==", "id"=>"13"}
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT  "salidas".* FROM "salidas" WHERE "salidas"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "salidas" WHERE "salidas"."id" = ?[0m  [["id", 13]]
+  [1m[35m (224.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/salidas
+Completed 302 Found in 264ms (ActiveRecord: 226.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:38:43 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 115ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas/new" for ::1 at 2016-07-25 15:38:45 -0500
+Processing by SalidasController#new as HTML
+  Rendering salidas/new.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered salidas/_form.html.erb (6.0ms)
+  Rendered salidas/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 129ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salidas" for ::1 at 2016-07-25 15:38:56 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EzvUeUZ2cmWlvCmdcs+XwhHnsVWPtx7Kp9EWWQ4PKOofyg7nZjDHbreUiFJUbkgWJ/J1A/WnsQgLpBHcsgdAnQ==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"25", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"5", "autoriza"=>"5"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "salidas" ("fecha", "numero", "articulo", "piezas", "solicita", "autoriza", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fecha", Mon, 25 Jul 2016], ["numero", 1], ["articulo", "pernos"], ["piezas", 5], ["solicita", "5"], ["autoriza", "5"], ["created_at", 2016-07-25 20:38:56 UTC], ["updated_at", 2016-07-25 20:38:56 UTC]]
+  [1m[35m (425.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/salidas/15
+Completed 302 Found in 455ms (ActiveRecord: 426.0ms)
+
+
+Started GET "/salidas/15" for ::1 at 2016-07-25 15:38:57 -0500
+Processing by SalidasController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT  "salidas".* FROM "salidas" WHERE "salidas"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering salidas/show.html.erb within layouts/application
+  Rendered salidas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 270ms (Views: 228.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-25 15:38:59 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 110ms (Views: 103.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:39:49 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 103ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:39:50 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 124ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-25 15:41:52 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 112ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/milligram.self-679541c81a17c5fca3159783583b4fb2103e9622eadfb3b40d1177f50952189b.css?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/entradas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/productos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/proveedors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/entradas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/productos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/proveedors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/salidas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-25 15:41:52 -0500
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-25 15:41:53 -0500
+Started GET "/assets/salidas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-25 15:41:53 -0500
+Started GET "/" for ::1 at 2016-07-26 15:27:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb (29.0ms)
+Completed 200 OK in 185ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-26 15:27:20 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 580ms (Views: 501.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-26 15:32:29 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 132ms (Views: 121.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:32:29 -0500
+Started GET "/assets/milligram.self-679541c81a17c5fca3159783583b4fb2103e9622eadfb3b40d1177f50952189b.css?body=1" for ::1 at 2016-07-26 15:32:29 -0500
+Started GET "/assets/productos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:32:29 -0500
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-26 15:32:29 -0500
+Started GET "/assets/proveedors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:32:29 -0500
+Started GET "/assets/entradas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:32:29 -0500
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-26 15:32:29 -0500
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-26 15:32:29 -0500
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-26 15:32:29 -0500
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-26 15:32:30 -0500
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-26 15:32:30 -0500
+Started GET "/assets/entradas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:32:30 -0500
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:32:30 -0500
+Started GET "/assets/productos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:32:30 -0500
+Started GET "/assets/proveedors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:32:30 -0500
+Started GET "/assets/salidas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:32:30 -0500
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-26 15:32:30 -0500
+Started GET "/assets/salidas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:32:30 -0500
+Started GET "/salidas/new" for ::1 at 2016-07-26 15:32:31 -0500
+Processing by SalidasController#new as HTML
+  Rendering salidas/new.html.erb within layouts/application
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered salidas/_form.html.erb (244.0ms)
+  Rendered salidas/new.html.erb within layouts/application (267.0ms)
+Completed 200 OK in 381ms (Views: 370.5ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/salidas" for ::1 at 2016-07-26 15:32:41 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ryK7mkozGjYdAaWH+m8pPzOuYA/k/TLScBtqlj6i0QDu+PCsOD6RgSqAVnjdelqfUQAeM01UJIJnROQ7E3J4HQ==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"65", "autoriza"=>"65"}, "commit"=>"Create Salida"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `-' for nil:NilClass):
+  
+app/models/salida.rb:10:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (990.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 15:33:04 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ryK7mkozGjYdAaWH+m8pPzOuYA/k/TLScBtqlj6i0QDu+PCsOD6RgSqAVnjdelqfUQAeM01UJIJnROQ7E3J4HQ==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"65", "autoriza"=>"65"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `-' for nil:NilClass):
+  
+app/models/salida.rb:10:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (953.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 15:33:32 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ryK7mkozGjYdAaWH+m8pPzOuYA/k/TLScBtqlj6i0QDu+PCsOD6RgSqAVnjdelqfUQAeM01UJIJnROQ7E3J4HQ==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"65", "autoriza"=>"65"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  [1m[35mSQL (12.0ms)[0m  [1m[32mINSERT INTO "salidas" ("fecha", "numero", "articulo", "piezas", "solicita", "autoriza", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fecha", Tue, 26 Jul 2016], ["numero", 1], ["articulo", "pernos"], ["piezas", 5], ["solicita", "65"], ["autoriza", "65"], ["created_at", 2016-07-26 20:33:32 UTC], ["updated_at", 2016-07-26 20:33:32 UTC]]
+  [1m[35m (80.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/salidas/16
+Completed 302 Found in 163ms (ActiveRecord: 94.0ms)
+
+
+Started GET "/salidas/16" for ::1 at 2016-07-26 15:33:32 -0500
+Processing by SalidasController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT  "salidas".* FROM "salidas" WHERE "salidas"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering salidas/show.html.erb within layouts/application
+  Rendered salidas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 122ms (Views: 93.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/milligram.self-679541c81a17c5fca3159783583b4fb2103e9622eadfb3b40d1177f50952189b.css?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/productos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/proveedors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/entradas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/entradas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/productos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/proveedors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/salidas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/assets/salidas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-26 15:33:33 -0500
+Started GET "/salidas" for ::1 at 2016-07-26 15:33:35 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 99ms (Views: 91.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-26 15:33:40 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 113ms (Views: 98.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas" for ::1 at 2016-07-26 15:41:19 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (1.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 110ms (Views: 98.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/salidas/new" for ::1 at 2016-07-26 15:41:22 -0500
+Processing by SalidasController#new as HTML
+  Rendering salidas/new.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered salidas/_form.html.erb (21.0ms)
+  Rendered salidas/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 144ms (Views: 132.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/salidas" for ::1 at 2016-07-26 15:41:30 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kiGWsU6Lb2tmIoWweOg0jspjPugg4h1qlIpneNTJVzfT+92HPIbk3FGjdk9f/UcuqM1A1IlLCzqD1enV+Rn+Kg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"5", "autoriza"=>"5"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `-' for nil:NilClass):
+  
+app/models/salida.rb:10:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (877.1ms)
+Started POST "/__web_console/repl_sessions/b932a87bad2e92cdbe1c2d45b0b16bea/trace" for ::1 at 2016-07-26 15:41:57 -0500
+Started POST "/__web_console/repl_sessions/b932a87bad2e92cdbe1c2d45b0b16bea/trace" for ::1 at 2016-07-26 15:41:58 -0500
+Started POST "/__web_console/repl_sessions/b932a87bad2e92cdbe1c2d45b0b16bea/trace" for ::1 at 2016-07-26 15:41:59 -0500
+Started POST "/salidas" for ::1 at 2016-07-26 15:43:21 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kiGWsU6Lb2tmIoWweOg0jspjPugg4h1qlIpneNTJVzfT+92HPIbk3FGjdk9f/UcuqM1A1IlLCzqD1enV+Rn+Kg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"5", "autoriza"=>"5"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Salida:0x5caf1e0>):
+  
+app/models/salida.rb:9:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (908.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 15:43:49 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kiGWsU6Lb2tmIoWweOg0jspjPugg4h1qlIpneNTJVzfT+92HPIbk3FGjdk9f/UcuqM1A1IlLCzqD1enV+Rn+Kg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"5", "autoriza"=>"5"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Salida:0x5a75180>):
+  
+app/models/salida.rb:11:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (907.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 15:44:12 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kiGWsU6Lb2tmIoWweOg0jspjPugg4h1qlIpneNTJVzfT+92HPIbk3FGjdk9f/UcuqM1A1IlLCzqD1enV+Rn+Kg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"5", "autoriza"=>"5"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `exitencia' for #<Salida:0x5bc6bc0>):
+  
+app/models/salida.rb:10:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (926.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 15:44:46 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kiGWsU6Lb2tmIoWweOg0jspjPugg4h1qlIpneNTJVzfT+92HPIbk3FGjdk9f/UcuqM1A1IlLCzqD1enV+Rn+Kg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"5", "autoriza"=>"5"}, "commit"=>"Create Salida"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/deployment and curs/inventario/app/models/salida.rb:10: syntax error, unexpected '=', expecting keyword_end
+		 	:existencia = exitencia
+		 	             ^):
+  
+app/models/salida.rb:10: syntax error, unexpected '=', expecting keyword_end
+app/controllers/salidas_controller.rb:27:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1061.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 15:44:56 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kiGWsU6Lb2tmIoWweOg0jspjPugg4h1qlIpneNTJVzfT+92HPIbk3FGjdk9f/UcuqM1A1IlLCzqD1enV+Rn+Kg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"5", "autoriza"=>"5"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `exitencia' for #<Salida:0x9501a98>):
+  
+app/models/salida.rb:10:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (983.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePiezasexistencia (20160726205104)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE TABLE "piezasexistencia" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160726205104"]]
+  [1m[35m (76.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/productos" for ::1 at 2016-07-26 16:20:32 -0500
+Started POST "/salidas" for ::1 at 2016-07-26 16:20:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SalidasController#create as HTML
+Processing by ProductosController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kiGWsU6Lb2tmIoWweOg0jspjPugg4h1qlIpneNTJVzfT+92HPIbk3FGjdk9f/UcuqM1A1IlLCzqD1enV+Rn+Kg==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"5", "autoriza"=>"5"}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Salida:0x41328c0>):
+  
+app/models/salida.rb:9:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (82.0ms)
+Completed 200 OK in 599ms (Views: 506.0ms | ActiveRecord: 1.0ms)
+
+
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1634.1ms)
+Started GET "/salidas" for ::1 at 2016-07-26 16:21:15 -0500
+Processing by SalidasController#index as HTML
+  Rendering salidas/index.html.erb within layouts/application
+  [1m[36mSalida Load (0.0ms)[0m  [1m[34mSELECT "salidas".* FROM "salidas"[0m
+  Rendered salidas/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 111ms (Views: 104.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salidas/new" for ::1 at 2016-07-26 16:21:17 -0500
+Processing by SalidasController#new as HTML
+  Rendering salidas/new.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered salidas/_form.html.erb (30.0ms)
+  Rendered salidas/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 127ms (Views: 120.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salidas" for ::1 at 2016-07-26 16:21:23 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jndxrm//YNJYombI51FRHzonHI3K2/UcQH9SUXHLavxnrTqYHfLrZW8jlTfARCK/WIlisWNy40xXINz8XBvD4Q==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"", "autoriza"=>""}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Salida:0x96c4a58>):
+  
+app/models/salida.rb:9:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (917.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 16:21:48 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jndxrm//YNJYombI51FRHzonHI3K2/UcQH9SUXHLavxnrTqYHfLrZW8jlTfARCK/WIlisWNy40xXINz8XBvD4Q==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"", "autoriza"=>""}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Salida:0x9c3cf00>):
+  
+app/models/salida.rb:9:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (899.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 16:22:45 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jndxrm//YNJYombI51FRHzonHI3K2/UcQH9SUXHLavxnrTqYHfLrZW8jlTfARCK/WIlisWNy40xXINz8XBvD4Q==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"", "autoriza"=>""}, "commit"=>"Create Salida"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `-' for :existencia:Symbol):
+  
+app/models/salida.rb:9:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (939.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 16:23:01 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jndxrm//YNJYombI51FRHzonHI3K2/UcQH9SUXHLavxnrTqYHfLrZW8jlTfARCK/WIlisWNy40xXINz8XBvD4Q==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"", "autoriza"=>""}, "commit"=>"Create Salida"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Salida:0x9f29190>):
+  
+app/models/salida.rb:9:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (979.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 16:23:12 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jndxrm//YNJYombI51FRHzonHI3K2/UcQH9SUXHLavxnrTqYHfLrZW8jlTfARCK/WIlisWNy40xXINz8XBvD4Q==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"", "autoriza"=>""}, "commit"=>"Create Salida"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.0ms)
+
+
+  
+ArgumentError (comparison of Symbol with 5 failed):
+  
+app/models/salida.rb:9:in `>='
+app/models/salida.rb:9:in `update_stock'
+app/controllers/salidas_controller.rb:30:in `block in create'
+app/controllers/salidas_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (937.1ms)
+Started POST "/salidas" for ::1 at 2016-07-26 16:23:29 -0500
+Processing by SalidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jndxrm//YNJYombI51FRHzonHI3K2/UcQH9SUXHLavxnrTqYHfLrZW8jlTfARCK/WIlisWNy40xXINz8XBvD4Q==", "salida"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"26", "numero"=>"1", "articulo"=>"pernos", "piezas"=>"5", "solicita"=>"", "autoriza"=>""}, "commit"=>"Create Salida"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/deployment and curs/inventario/app/models/salida.rb:9: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
+		 	if existencia: >= piezas 
+		 	              ^
+D:/deployment and curs/inventario/app/models/salida.rb:20: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/salida.rb:9: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
+app/models/salida.rb:20: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/salidas_controller.rb:27:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (931.1ms)
